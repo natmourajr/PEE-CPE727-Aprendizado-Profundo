@@ -1,2 +1,2 @@
-# PEE-CPE727-Aprendizado-Profundo - 2024-03
-Repositório para ser utilizado para a disciplina do programa de engenharia elétrica da Coppe CPE727 Aprendizado Profundo no período 2024-03
+# Seminário de Redes Neurais Profundas
+O seminário é baseado no Capítulo 8 do livro [The Deep Learning book](https://www.deeplearningbook.org/)

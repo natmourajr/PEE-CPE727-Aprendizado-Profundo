@@ -1,2 +1,2 @@
-# PEE-CPE727-Aprendizado-Profundo - 2024-03
-Repositório para ser utilizado para a disciplina do programa de engenharia elétrica da Coppe CPE727 Aprendizado Profundo no período 2024-03
+# Seminário de Ajuste de Hiperparametros
+O seminário é baseado no Capítulo 19 do livro [Dive into Deep Learning](https://d2l.ai/)
