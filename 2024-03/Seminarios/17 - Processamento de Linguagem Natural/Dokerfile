@@ -1,0 +1,23 @@
+# Use a imagem base do Python 3.9
+FROM python:3.9
+
+# Instale git
+RUN apt-get update && apt-get install -y git
+
+# Copie o arquivo requirements.txt para o contêiner
+COPY requirements.txt /app/requirements.txt
+
+# Defina o diretório de trabalho
+WORKDIR /app
+
+# Instale as dependências do requirements.txt
+RUN pip install -r requirements.txt
+
+# Instale JupyterLab e JupyterLab-Git
+RUN pip install jupyterlab jupyterlab-git==0.50.0
+
+# Configuração para permitir que JupyterLab seja acessível de qualquer lugar (não apenas localhost)
+EXPOSE 8888
+
+# Inicie o Jupyter Lab ao iniciar o contêiner
+CMD ["jupyter", "lab", "--port=8888", "--ServerApp.iopub_msg_rate_limit=1000000000","--no-browser", "--allow-root"]
